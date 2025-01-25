@@ -1,0 +1,58 @@
+#contents {
+    min-height: 67.2px;
+    height: 67.2px;
+    transition: all 1.5s ease;
+}
+#weather-report {
+    margin: auto;
+}
+
+#popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    width: 60vw;
+    min-height: 250px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translateX(50%) translateY(50%) scale(0);
+    transition: all 100ms linear;
+    border-radius: 30px;
+    box-shadow: 5px -5px 10px 3px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#popup button{
+    padding: 5px 15px;
+    margin-top: 2vh;
+    border-radius: 40px;
+}
+
+#popup.welcome {
+    color: white;
+}
+
+@media (max-width: 446px){
+    #navigation h1{
+        font-size: 40px;
+    }
+    #navigation img {
+        width: 70px;
+    }
+}
+
+@media (max-width: 398px){
+    #navigation{
+        padding: auto;
+    }
+    #navigation h1{
+        font-size: 35px;
+    }
+    #navigation img {
+        width: 70px;
+    }
+}
